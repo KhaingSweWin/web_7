@@ -1,0 +1,53 @@
+.col{
+    width:45%;
+    float: left;
+}
+/*body{
+    font-family: 'Roboto', sans-serif;
+}*/
+@font-face {
+    font-family: myfont;
+    src: url(../assests/Roboto-Regular.ttf);
+    font-family:myfont;
+}
+*{
+    margin:0px;
+}
+nav{
+    width:100%;
+    height:60px;
+    background-color:red;
+}
+nav ul{
+    list-style-type:none;
+}
+nav ul li{
+    float:left;
+    padding:20px;
+    position: relative;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background-color:white;
+}
+nav ul li:hover a{
+    color:blue;
+}
+.productsbar{
+    display:none;
+}
+nav>ul>li:hover .productsbar{
+    display:block;
+    background-color:wheat;
+    position: absolute;
+    top:60px;
+    left:10px;
+    width:100px;
+    padding:0px;
+}
+.productsbar ul li{
+    clear:both;
+}

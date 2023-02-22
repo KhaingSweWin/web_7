@@ -1,0 +1,66 @@
+.container{
+    width:600px;
+    height:600px;
+    border:2px solid red;
+    position: relative;
+}
+.box1,.box2,.box3{
+    width:200px;
+    height:200px;
+}
+.box1{
+    background-color:red;
+    position: absolute;
+    left:100px;
+    top:100px;
+    z-index: 4;
+    animation:myani 2s infinite linear;
+}
+
+@keyframes myani{
+    to{
+        transform: translate(100px);
+        background-color:black;
+    }
+    from{
+        transform: translate(-100px);
+        background-color:blue;
+    }
+}
+.box2{
+    background-color:black;
+    position: absolute;
+    left:150px;
+    top:150px;
+    z-index:300;
+    transform:skew(30deg);
+}
+.box2::before{
+    content:"";
+    background-color:white;
+    width:100px;
+    height:10px;
+    position:absolute;
+    top:50px;
+    left:0px;
+}
+p{
+    color:white;
+}
+.box3{
+    background-color:green;
+    position: absolute;
+    left:200px;
+    top:200px;
+    z-index:100;
+    
+}
+.heading::before{
+    content:"";
+    background-color:black;
+    width:150px;
+    height:10px;
+    position: absolute;
+    top:50px;
+    left:0px;
+}

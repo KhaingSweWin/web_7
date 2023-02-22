@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <button class="btn btn-primary" data-bs-target="#mycanvas" data-bs-toggle="offcanvas">Menu</button>
+                <div class="offcanvas offcanvas-end" id="mycanvas">
+                    <div class="offcanvas-header">
+                        <h2 class="offcanvas-title">Offcanvae Menu</h2>
+                        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur nulla aut debitis natus dignissimos sunt temporibus exercitationem illum cumque. Sequi fugit commodi voluptates deleniti saepe nulla voluptatibus beatae dolores quibusdam!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="" class="page-link">Previous</a></li>
+                    <li class="page-item active"><a href="" class="page-link">1</a></li>
+                    <li class="page-item"><a href="" class="page-link">2</a></li>
+                    <li class="page-item"><a href="" class="page-link">3</a></li>
+                    <li class="page-item"><a href="" class="page-link">4</a></li>
+                    <li class="page-item"><a href="" class="page-link">5</a></li>
+                    <li class="page-item"><a href="" class="page-link">6</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <button class="btn btn-primary" data-bs-container="body" data-bs-placement="top" data-bs-toggle="popover" data-bs-content="Top Popover">
+                    Popover
+                </button> 
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-animated progress-bar-striped" style="width:38.4%"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button id="toastbtn" class="btn btn-primary">Test Toast</button>
+                <div class="toast-container position-fixed bottom-0 end-0">
+                    <div class="toast" id="mytoast">
+                        <div class="toast-header">
+                            <h2>Toast Header</h2>
+                            <button class="btn-close" data-bs-dismiss="toast"></button>
+                        </div>
+                        <div class="toast-body">
+                            
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus maxime quos, voluptatem adipisci fugit tenetur pariatur, aspernatur odit exercitationem at, corrupti dolore amet quasi. Nesciunt maiores cupiditate obcaecati placeat ipsa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

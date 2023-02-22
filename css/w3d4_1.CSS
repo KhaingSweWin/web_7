@@ -1,0 +1,10 @@
+.div1{
+    width:100vw;
+    height:100vh;
+    border:2px solid red;
+}
+h2{
+    width:10vw;
+    background-color: yellow;
+    height:100vmin;
+}

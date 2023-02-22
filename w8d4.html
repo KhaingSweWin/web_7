@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/w8d4.css">
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="">
+                <div class="">
+                    <label for="">Gender</label>
+                    <input type="radio" name="gander" id="" class="form-check-input" value="male">Male
+                    <input type="radio" name="gander" id="" class="form-check-input" value="female">Female
+                    <input type="radio" name="gander" id="" class="form-check-input" value="custom">Custom
+                </div>
+                <div class="d-none mt-3" id="pronoun">
+                    <label for="" class="form-label">Choose Your Pronoun</label>
+                    <select name="pronoun" id="pro" class="form-control">
+                        <option value="None">Choose your Pronoun</option>
+                        <option value="she">She</option>
+                        <option value="he">He</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                </div>
+                <div id="gender_text" class="d-none mt-3">
+                    <label for="" class="form-label">Gander (Optional)</label>
+                    <input type="text" name="gander_text " id="" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <label for="" class="form-label">Day</label>
+                    <select name="date" id="date" class="form-control">
+                        
+                    </select>
+                </div>
+                <label for="">Description (Maximum Characters:300)</label>
+                <textarea name="description" id="description" cols="30" rows="10" class="form-control"></textarea>
+                <span class="message"></span>
+            </form>
+        </div>
+    </div>
+   </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/w8d4.js"></script>
+</body>
+</html>
